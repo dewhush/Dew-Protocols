@@ -1,6 +1,6 @@
 # Dew Protocols: Autonomous Crypto Intelligence Network
 
-![Dew Protocols Logo](assets/logo.png)
+![Dew Protocols Logo](logo.png)
 
 ![Status](https://img.shields.io/badge/Status-Active-success)
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
