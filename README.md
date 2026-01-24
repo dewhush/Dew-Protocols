@@ -54,8 +54,8 @@ graph TD
     
     E -->|Draft Content| F{Platform Router}
     
-    F -->|High Priority| G[X API (@dewprotocols)]
-    F -->|Standard| H[Threads API (@dewprotocols)]
+    F -->|High Priority| G["X API (@dewprotocols)"]
+    F -->|Standard| H["Threads API (@dewprotocols)"]
     
     I[Token Keeper] -->|Auto-Refresh| H
     J[Env Validator] -->|Health Check| B
