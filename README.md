@@ -1,6 +1,8 @@
 # Dew Protocols: Autonomous Crypto Intelligence Network
 
-![Dew Protocols Logo](logo.png)
+<div align="center">
+  <img src="logo.png" alt="Dew Protocols Logo" width="200">
+</div>
 
 ![Status](https://img.shields.io/badge/Status-Active-success)
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
@@ -45,20 +47,47 @@ Built for resilience and reliability:
 
 ```mermaid
 graph TD
-    A[Scheduler 24h] -->|Trigger| B{Core Controller}
-    B -->|Regular Slot?| C[News Fetcher]
-    B -->|Breaking News?| D[Market Monitor]
+    subgraph Sources ["📡 Data Sources"]
+        RSS[RSS Feeds: SEC, CoinTelegraph, PRNewswire]
+        HLQ[Hyperliquid WS: Liquidations & Whale Flows]
+        CG[CoinGecko API: BTC/ALT Market Data]
+        MAC[Macro Feed: SPX, Gold, Oil]
+    end
+
+    subgraph Core ["🧠 Intelligence & Orchestration"]
+        CNTL[Core Controller]
+        priority[Priority Engine: Breaking vs Regular]
+        LLM[Groq Llama-3: Content Generation]
+        persona[Persona Engine: Analyst vs Sniper]
+        filter[Safety & Character Limit Filter]
+    end
+
+    subgraph Out ["🚀 Distribution"]
+        T_LOOP[Dual-Loop Scheduler]
+        X[X / Twitter: Sniper Mode]
+        TR[Threads: Pulse Mode]
+        TG[Telegram: Administrative Ops]
+    end
+
+    subgraph Maintenance ["🛠️ System Health"]
+        TK[Token Keeper: OAuth Auto-Refresh]
+        EV[Env Validator: Pre-flight Checks]
+    end
+
+    %% Flow
+    RSS & HLQ & CG & MAC --> CNTL
+    CNTL --> priority
+    priority -->|Low/Med| T_LOOP
+    priority -->|High| LLM
     
-    C -->|RSS/API| E[AI Content Engine]
-    D -->|Price/Whale Data| E
+    T_LOOP -->|Scheduled| LLM
+    LLM --> persona
+    persona --> filter
+    filter --> X & TR
     
-    E -->|Draft Content| F{Platform Router}
-    
-    F -->|High Priority| G["X API (@dewprotocols)"]
-    F -->|Standard| H["Threads API (@dewprotocols)"]
-    
-    I[Token Keeper] -->|Auto-Refresh| H
-    J[Env Validator] -->|Health Check| B
+    CNTL -->|Health Alerts| TG
+    TK -->|Token Status| TR
+    EV -->|Boot Guard| CNTL
 ```
 
 ---
