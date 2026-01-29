@@ -6,7 +6,7 @@
 
 ![Status](https://img.shields.io/badge/Status-Active-success)
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
-![AI](https://img.shields.io/badge/AI-Groq%20%7C%20Llama3-orange)
+![AI](https://img.shields.io/badge/Gemini-Flash-2.5)
 ![Platform](https://img.shields.io/badge/Platform-Twitter%20%7C%20Threads-black)
 
 ---
@@ -95,7 +95,7 @@ graph TD
 ## 🛠️ Technology Stack
 
 *   **Core**: Python 3.12
-*   **Intelligence**: Groq API (Llama-3-70b-Versatile)
+*   **Intelligence**: Gemini 2.5 Flash
 *   **Data Aggregation**: CoinGecko, Hyperliquid, RSS Feeds
 *   **Orchestration**: Custom Threaded Scheduler, Cron
 *   **Ops & Monitoring**: Telegram Bot API
