@@ -8,13 +8,14 @@
 ---
 
 ![Status](https://img.shields.io/badge/Status-Operating-success)
-![Python](https://img.shields.io/badge/Python-3.12-blue)
-![AI](https://img.shields.io/badge/AI-Groq%20%7C%20Llama3-orange)
-![Infrastructure](https://img.shields.io/badge/Infra-Ubuntu%20%7C%20Nextcloud-purple)
+![Python](https://img.shields.io/badge/Language-Python-blue)
+![AI](https://img.shields.io/badge/AI-Private%20Model-orange)
+![Infrastructure](https://img.shields.io/badge/Infra-Enterprise%20Cloud-purple)
 
 ## 🌐 What is Dew Protocols?
 
 **Dew Protocols** is not just a bot; it's an **Autonomous Agentic Organization** designed to dominate the crypto news cycle. It operates as a 24/7 "Just In" news aggregator and on-chain analyst, delivering high-speed, high-signal customized content to X (Twitter) and Threads.
+
 ---
 
 ## 🏗️ System Architecture
@@ -24,30 +25,30 @@ Dew Protocols follows a **Data-Driven Event-Loop Architecture**.
 ```mermaid
 graph TD
     subgraph Data_Layer ["📡 Data Ingestion"]
-        HL[Hyperliquid Engine] -->|Trades & Open Interest| GH[Giant Hunter]
-        W[Watcher Guru Scraper] -->|Breaking News| NA[News Aggregator]
-        RSS[RSS Feeds] -->|Corporate Actions| NA
+        HL[L2 On-Chain Engine] -->|Trades & Open Interest| GH[Giant Hunter]
+        W[Global News Scraper] -->|Breaking News| NA[News Aggregator]
+        RSS[Corporate Feeds] -->|Corporate Actions| NA
         Price[Price Monitor] -->|Volatility & ATH| RE[Regime Engine]
     end
 
     subgraph Logic_Layer ["🧠 The Brain (Core Logic)"]
         GH & NA --> PE[Priority Engine]
         RE --> PE
-        PE -->|High Signal Event| LLM["LLM Client (Groq/Llama3)"]
+        PE -->|High Signal Event| LLM["Cognitive Core (AI Model)"]
         LLM -->|Draft Content| VAL[Content Validator]
         VAL -->|Approved| IG[Image Generator]
     end
 
     subgraph Storage_Layer ["💾 State & Logging"]
-        States[JSON State Files] <-->|Sync| NC[Nextcloud Cloud Storage]
-        Logs[Activity Logs] -->|Backup| SB[Supabase DB]
+        States[State Files] <-->|Sync| NC[Encrypted Cloud Storage]
+        Logs[Activity Logs] -->|Backup| SB[Time-Series DB]
     end
 
     subgraph Action_Layer ["🚀 Broadcaster"]
         IG --> Poster[Smart Broadcaster]
         Poster -->|API/Browser| Twitter["X (Twitter) Bot"]
         Poster -->|API| Threads[Threads Bot]
-        Poster -->|Notify| TG[Telegram Admin Ops]
+        Poster -->|Notify| TG[Admin Ops]
     end
 
     %% formatting
