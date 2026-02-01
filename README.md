@@ -51,10 +51,10 @@ graph TD
     end
 
     %% formatting
-    classDef source fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
-    classDef logic fill:#fff3e0,stroke:#ff6f00,stroke-width:2px;
-    classDef storage fill:#f3e5f5,stroke:#4a148c,stroke-width:2px;
-    classDef action fill:#e8f5e9,stroke:#1b5e20,stroke-width:2px;
+    classDef source fill:#e1f5fe,stroke:#01579b,stroke-width:2px,color:#000;
+    classDef logic fill:#fff3e0,stroke:#ff6f00,stroke-width:2px,color:#000;
+    classDef storage fill:#f3e5f5,stroke:#4a148c,stroke-width:2px,color:#000;
+    classDef action fill:#e8f5e9,stroke:#1b5e20,stroke-width:2px,color:#000;
 
     class HL,W,RSS,Price source;
     class GH,NA,RE,PE,LLM,VAL,IG logic;
