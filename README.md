@@ -1,105 +1,140 @@
-# Dew Protocols: Autonomous Crypto Intelligence Network
+# Dew Protocols: The Autonomous "Just In" Intelligence
 
 <div align="center">
   <img src="logo.png" alt="Dew Protocols Logo" width="200">
+  <br>
+  <b>Real-Time Crypto Intelligence | Whale Tracking | Gen-Z Analyst Persona</b>
 </div>
-
-![Status](https://img.shields.io/badge/Status-Active-success)
-![Python](https://img.shields.io/badge/Python-3.10+-blue)
-![AI](https://img.shields.io/badge/Gemini-Flash-2.5)
-![Platform](https://img.shields.io/badge/Platform-Twitter%20%7C%20Threads-black)
 
 ---
 
-## 🌐 Introduction
-**Dew Protocols** (@dewprotocols) is a state-of-the-art autonomous agent designed to navigate the volatile landscape of the cryptocurrency market with precision and speed. Unlike traditional bots that simply repost headlines, Dew Protocols acts as a sophisticated intelligence network, synthesizing real-time data from multiple vectors—price action, on-chain whale movements, and global news feeds—to deliver actionable insights.
+![Status](https://img.shields.io/badge/Status-Operating-success)
+![Python](https://img.shields.io/badge/Python-3.12-blue)
+![AI](https://img.shields.io/badge/AI-Groq%20%7C%20Llama3-orange)
+![Infrastructure](https://img.shields.io/badge/Infra-Ubuntu%20%7C%20Nextcloud-purple)
 
-Operating 24/7, the system mimics human behavior through a "Dual-Loop" architecture, ensuring it engages with audiences on **X (Twitter)** and **Threads** in a way that feels organic, timely, and authoritative. It doesn't just report the news; it interprets it, adapting its persona to fit the platform and the market sentiment.
+## 🌐 What is Dew Protocols?
 
-## 🚀 Core Capabilities
+**Dew Protocols** is not just a bot; it's an **Autonomous Agentic Organization** designed to dominate the crypto news cycle. It operates as a 24/7 "Just In" news aggregator and on-chain analyst, delivering high-speed, high-signal customized content to X (Twitter) and Threads.
 
-### 1. The "Dual-Loop" Engine
-The heart of Dew Protocols is its ability to manage two distinct social ecosystems simultaneously:
-*   **The Pulse (Threads)**: Designed for high-frequency engagement. The bot maintains a steady stream of updates (every 5-15 minutes), capturing the "pulse" of the market during peak hours. It aims to maximize visibility within the daily post limits.
-*   **The Sniper (X/Twitter)**: Built for high-impact communication. Recognizing the noise on X, the bot engages "Sniper Mode," firing off 15 curated, high-value posts per day during critical engagement windows (06:00, 12:00, 18:00), ensuring maximum reach and relevance.
+Unlike generic alert bots, Dew Protocols adopts a **"Jaksel" Gen-Z persona**—blending financial sophistication with slang/meme culture (e.g., "Mega Whale Alert", "Cukong Masuk"). It doesn't just repost data; it interprets market regimes, visualizes whale movements, and engages with the community using AI-generated visuals and witty commentary.
 
-### 2. Cognitive AI Content Generation
-Dew Protocols leverages advanced Large Language Models (LLMs) to generate content that transcends basic automation:
-*   **Adaptive Persona**: It switches seamlessly between a "Street-Smart" analyst for casual Threads updates and a "Breaking News" reporter for urgent Twitter alerts.
-*   **Contextual Intelligence**: Before drafting a tweet, the AI analyzes current market sentiment, technical indicators, and recent on-chain events to ensure the commentary is astute and relevant.
-*   **Smart Formatting**: The engine strictly adheres to platform-specific constraints (350 chars for Threads, 150 for X) while automatically highlighting key data points like percentage changes.
+## 🚀 Key Features
 
-### 3. Hyper-Vigilant Market Monitor
-The system keeps an unblinking eye on the market:
-*   **Multi-Asset Tracking**: continuously monitors the heartbeat of major assets including BTC, ETH, SOL, XRP, BNB, and Gold (PAXG).
-*   **Whale Watcher**: Integrated directly with Hyperliquid, it detects significant capital flows and "Whale" movements, alerting followers to potential market-moving events before they hit the mainstream news.
-*   **Trend & Volatility Detection**: Algorithms identify "Pump" or "Dump" scenarios in real-time, triggering immediate compliance overrides to prioritize breaking news over scheduled content.
+### 1- 🐋 Giant Hunter (Hyperliquid Whale Watcher)
+Directly taps into the **Hyperliquid** L2 data stream to detect massive capital flows.
+- **Real-Time Detection**: Monitors "Mega Whales" ($100k+) and "Krakens" ($1M+) opening/closing positions.
+- **PnL Tracking**: Tracks the profitability of these whales over time (e.g., "Whale who bought bottoms is now taking profit").
+- **Visuals**: Auto-generates cyberpunk-style images of whales based on position side (Bullish/Bearish).
 
-### 4. Enterprise-Grade Infrastructure
-Built for resilience and reliability:
-*   **Self-Healing Authentication**: The "Token Keeper" module runs in the background, auto-refreshing OAuth tokens every 30 minutes to guarantee zero downtime.
-*   **Pre-Flight Validation**: A robust set of environmental checks ensures all API keys and external services are operational before the system initiates.
-*   **Ops Central (Telegram)**: A dedicated command channel allows administrators to receive health reports, validation status, and error logs instantly.
+### 2- ⚡ "Just In" News Agreggator
+A multi-vector scraping engine that beats mainstream media to the punch.
+- **Sources**: Watcher Guru, Cointelegraph, SUI Ecosystem, and direct RSS feeds (SEC, PRNewswire).
+- **Speed**: Scrapes every 3-5 minutes, filters for "High Priority" keywords, and broadcasts immediately.
+- **Zero-Hallucination**: Uses rigorous content validation to ensure news is factual before AI rephrasing.
+
+### 3- 🧠 Regime & Price Monitor
+An internal "Regime Engine" that understands market context.
+- **Trend Detection**: Identifies Pump, Dump, ATH (All-Time High), and Correction phases.
+- **Context Awareness**: Won't post low-priority news during a "Panic Sell" event.
+- **Sentiment Alpha**: Tracks Long/Short ratios and funding rates to provide "Counter-Trade" signals.
+
+### 4- 🖼️ Cognitive Brand Backend
+A sophisticated content pipeline that ensures brand consistency.
+- **Persona Engine**: Enforces strict character limits (350 chars for Threads, 150 for X) and tone.
+- **Image Gen**: Integrated with Pollinations AI to create dynamic headers and thumbnails.
+- **Cross-Posting**: Smartly formats content for X (Hashtags, Cashtags) vs Threads (Visual-first, longer form).
 
 ---
 
 ## 🏗️ System Architecture
 
+Dew Protocols follows a **Data-Driven Event-Loop Architecture**.
+
 ```mermaid
 graph TD
-    subgraph Sources ["📡 Data Sources"]
-        RSS[RSS Feeds: SEC, CoinTelegraph, PRNewswire]
-        HLQ[Hyperliquid WS: Liquidations & Whale Flows]
-        CG[CoinGecko API: BTC/ALT Market Data]
-        MAC[Macro Feed: SPX, Gold, Oil]
+    subgraph Data_Layer ["📡 Data Ingestion"]
+        HL[Hyperliquid Engine] -->|Trades & Open Interest| GH[Giant Hunter]
+        W[Watcher Guru Scraper] -->|Breaking News| NA[News Aggregator]
+        RSS[RSS Feeds] -->|Corporate Actions| NA
+        Price[Price Monitor] -->|Volatility & ATH| RE[Regime Engine]
     end
 
-    subgraph Core ["🧠 Intelligence & Orchestration"]
-        CNTL[Core Controller]
-        priority[Priority Engine: Breaking vs Regular]
-        LLM[Groq Llama-3: Content Generation]
-        persona[Persona Engine: Analyst vs Sniper]
-        filter[Safety & Character Limit Filter]
+    subgraph Logic_Layer ["🧠 The Brain (Core Logic)"]
+        GH & NA --> PE[Priority Engine]
+        RE --> PE
+        PE -->|High Signal Event| LLM[LLM Client (Groq/Llama3)]
+        LLM -->|Draft Content| VAL[Content Validator]
+        VAL -->|Approved| IG[Image Generator]
     end
 
-    subgraph Out ["🚀 Distribution"]
-        T_LOOP[Dual-Loop Scheduler]
-        X[X / Twitter: Sniper Mode]
-        TR[Threads: Pulse Mode]
-        TG[Telegram: Administrative Ops]
+    subgraph Storage_Layer ["� State & Logging"]
+        States[JSON State Files] <-->|Sync| NC[Nextcloud Cloud Storage]
+        Logs[Activity Logs] -->|Backup| SB[Supabase DB]
     end
 
-    subgraph Maintenance ["🛠️ System Health"]
-        TK[Token Keeper: OAuth Auto-Refresh]
-        EV[Env Validator: Pre-flight Checks]
+    subgraph Action_Layer ["� Broadcaster"]
+        IG --> Poster[Smart Broadcaster]
+        Poster -->|API/Browser| Twitter[X (Twitter) Bot]
+        Poster -->|API| Threads[Threads Bot]
+        Poster -->|Notify| TG[Telegram Admin Ops]
     end
 
-    %% Flow
-    RSS & HLQ & CG & MAC --> CNTL
-    CNTL --> priority
-    priority -->|Low/Med| T_LOOP
-    priority -->|High| LLM
-    
-    T_LOOP -->|Scheduled| LLM
-    LLM --> persona
-    persona --> filter
-    filter --> X & TR
-    
-    CNTL -->|Health Alerts| TG
-    TK -->|Token Status| TR
-    EV -->|Boot Guard| CNTL
+    %% formatting
+    classDef source fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+    classDef logic fill:#fff3e0,stroke:#ff6f00,stroke-width:2px;
+    classDef storage fill:#f3e5f5,stroke:#4a148c,stroke-width:2px;
+    classDef action fill:#e8f5e9,stroke:#1b5e20,stroke-width:2px;
+
+    class HL,W,RSS,Price source;
+    class GH,NA,RE,PE,LLM,VAL,IG logic;
+    class States,Logs,NC,SB storage;
+    class Poster,Twitter,Threads,TG action;
 ```
 
 ---
 
 ## 🛠️ Technology Stack
 
-*   **Core**: Python 3.12
-*   **Intelligence**: Gemini 2.5 Flash
-*   **Data Aggregation**: CoinGecko, Hyperliquid, RSS Feeds
-*   **Orchestration**: Custom Threaded Scheduler, Cron
-*   **Ops & Monitoring**: Telegram Bot API
+### Core Logic
+- **Language**: Python 3.12 (Typed, AsyncIO)
+- **AI/LLM**: Groq API (Llama-3-70b-Versatile) for speed and intelligence.
+- **Image Gen**: Pollinations AI (Flux) for instant visual assets.
+
+### Backend Infrastructure
+- **Server**: Ubuntu 22.04 LTS (Hetzner/DigitalOcean).
+- **Process Management**: `Systemd` services + `PM2` for monitoring.
+- **Storage**: **Nextcloud** (WebDAV) for decentralized state management and log syncing.
+- **Database**: **Supabase** (PostgreSQL) for long-term historical analysis.
+
+### Data & Connectivity
+- **APIs**: Hyperliquid (Direct API), CoinGecko (Market Data).
+- **Scraping**: `Playwright` & `BeautifulSoup4` with **Rotating Proxies** (`verified_proxies.json`) to bypass WAFs.
+- **Networking**: Cloudflare WARP (1.1.1.1) for secure, high-speed upstream connectivity.
+
+### "Banned" / Resilient Tech
+- **Browser Fingerprinting**: Uses Stealth Puppeteer/Playwright techniques to mimic human users.
+- **Cookie Management**: Persistent session handling to avoid repeated logins/captchas.
+- **Rate Limit Evasion**: Jittered scheduling and smart backoff algorithms.
 
 ---
 
-> 🔒 *Note: This repository contains a portfolio showcase for Dew Protocols. The source code is private intellectual property.*
+## � Project Structure
+
+```bash
+X Automation/
+├── src/
+│   ├── generators/       # AI Content prompts & templates
+│   ├── utils/            # Helper functions (text, formatting)
+│   ├── giant_hunter_flow.py # Hyperliquid Whale Logic
+│   ├── content_generator.py # Central AI Drafts
+│   ├── llm_client.py     # Groq Interface
+│   └── nextcloud_logger.py # Cloud Sync
+├── data/                 # JSON State files (Synced to Nextcloud)
+├── scripts/              # Verify & Maintenance scripts
+└── deploy.py             # Auto-deployment to Production
+```
+
+---
+
+> ⚠️ **Disclaimer**: This is a private autonomous agent. Use at your own risk.
